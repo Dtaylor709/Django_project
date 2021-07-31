@@ -23,10 +23,11 @@ class IndexView(generic.ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['latest_stories'] = NewsStory.objects.all()[:4]
-        context['all_stories'] = NewsStory.objects.all()
+        context['latest_stories'] = NewsStory.objects.order_by('-pub_date')[:4]
+        context['all_stories'] = NewsStory.objects.order_by('-pub_date')
         return context
-
+# alter lines 27&28 to order by publication date
+# Entry.objects.filter(pub_date__year=2005).order_by('-pub_date', 'headline')
 
 class StoryView(generic.DetailView):
     model = NewsStory

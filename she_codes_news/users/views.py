@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.urls import reverse_lazy
 from django.views.generic.edit import CreateView
 from django.views import generic
@@ -11,3 +12,7 @@ class CreateAccountView(CreateView):
     template_name = 'users/createAccount.html'
 
 # Create your views here.
+class AccountView(generic.DetailView):
+    model = CustomUser
+    template_name = 'users/viewAccount.html'
+    context_object_name = 'user'
