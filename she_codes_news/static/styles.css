@@ -9,26 +9,36 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/58a69f5be6f2e182266d2d05/1488805397065-N8MR406U3IF0YT8NUXIK/%C2%A9_HB_20120924_0002.jpg?format=1000w');
+    height: 300px;
 }
 
-img {
-    
+.header_paragraph {
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
 }
+
 
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
     text-decoration: none;
     font-size: 4rem;
     margin: 0;
+    color: white;
 }
 
 h2 {
    font-family: 'Montserrat Subrayada', sans-serif; 
+   color: black;
+   padding-top: 50px;
 }
 
 h3 {
     font-size: 2rem;
     margin: 0;
+    color: #9f2e00;
 }
 
 #header-text {
@@ -44,13 +54,24 @@ nav {
     padding: 10px 15px;
 }
 
+nav a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
 a {
     margin: 2px;
     text-decoration: none;
-    color: #000;
+    color: black;
     padding: 10px;
 }
 
 a, p {
     font-family: monospace;
 }
+/* 
+#container {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px
+} */
